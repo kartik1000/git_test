@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <script src="./script.js"></script>
+    <style src=".style.css"></style>
+    <title> Input Field </title>
+
+</head>
+
+
+
+<body>
+
+    <form>
+
+        <select name="Base Value" id="select">
+            <option value="A">Temperature</option>
+
+            <option value="B">Pressure</option>
+
+        </select>
+
+        Base Value of Temperature( Celsius)/Pressure(in kPa): <input type="number" min="0" step=".001" size="10"
+            maxlength="30" id="bvalue"> </br> </br>
+
+
+        <br></br>
+
+
+
+        <select name="Given value" id="choice">
+            <option value="v">Specific volume(m^3/kg)</option>
+
+            <option value="u">Internal Energy(kJ/kg)</option>
+            <option value="h">Enthalpy(kJ/kg)</option>
+            <option value="s">Entropy(kJ/kg.K)</option>
+
+
+        </select>
+
+        Given parameter to find state: <input type="number" min="0" step=".000001" size="10" maxlength="30" id="given">
+        </br> </br>
+
+        <input type="Submit" value="find the state" onclick="find(  )">
+
+
+    </form>
+<h4>Works for values within water-steam property table only.Hypothetical values are not entertained :)</h4>
+<h4>Refresh after each calculation.Still under development #NoobLevel</h4>
+</body>
+
+</html>
