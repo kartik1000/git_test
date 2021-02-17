@@ -1,2 +1,2 @@
 # git_test
-Trying git out
+Just a basic noob level utility project.
